@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        text-align: center;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      tbody {
+      }
+      tr,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      .green {
+        background-color: green;
+      }
+      .red {
+        background-color: red;
+      }
+      .orange {
+        background-color: orange;
+      }
+
+      img {
+        float: left;
+        padding: 0 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="exercise-1">
+      <h2>Задание 1</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="green">Test1</td>
+            <td colspan="2" style="font-size: 14px">Test</td>
+          </tr>
+          <tr>
+            <td class="orange">Test</td>
+            <td class="orange">Test</td>
+          </tr>
+          <tr>
+            <td class="green">Test</td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td class="red">Test</td>
+            <td class="red">1<sub>2</sub></td>
+            <td><sub>2</sub>1<sub>2</sub>1<sub>2</sub>1<sub>2</sub>1</td>
+          </tr>
+          <tr>
+            <td class="green">Test</td>
+            <td colspan="2">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="exercise-2">
+      <h2>Задание 2</h2>
+      <h2 class="lorem">Lorem-test</h2>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="жабка пепе"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ad
+        assumenda eligendi, porro veniam suscipit dolore tempore quasi maxime,
+        ullam quaerat fugiat aspernatur dignissimos animi asperiores earum
+        necessitatibus laboriosam! Earum?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet
+        consequatur vero repudiandae adipisci, dolore nesciunt esse expedita
+        dolorem harum. Dicta ex architecto illum accusantium corrupti provident
+        voluptas ipsum amet.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quos
+        dignissimos, laudantium quis accusamus, cum totam eius minima pariatur
+        tempore facilis. Magnam sit maxime inventore, ad cum sapiente tempore
+        tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+        debitis iure aut labore laudantium tenetur et non excepturi amet fugiat
+        saepe ab nostrum minus voluptatem, provident ipsum, nulla explicabo
+        aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+        reiciendis accusamus voluptatibus magnam cum deleniti commodi eum
+        blanditiis esse voluptate. Et corporis rerum molestiae earum quaerat cum
+        ipsum impedit maiores? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Explicabo quos dignissimos, laudantium quis accusamus,
+        cum totam eius minima pariatur tempore facilis. Magnam sit maxime
+        inventore, ad cum sapiente tempore tempora. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Sint, debitis iure aut labore laudantium
+        tenetur et non excepturi amet fugiat saepe ab nostrum minus voluptatem,
+        provident ipsum, nulla explicabo aperiam? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quo reiciendis accusamus voluptatibus
+        magnam cum deleniti commodi eum blanditiis esse voluptate. Et corporis
+        rerum molestiae earum quaerat cum ipsum impedit maiores? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Explicabo quos dignissimos,
+        laudantium quis accusamus, cum totam eius minima pariatur tempore
+        facilis. Magnam sit maxime inventore, ad cum sapiente tempore tempora.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, debitis
+        iure aut labore laudantium tenetur et non excepturi amet fugiat saepe ab
+        nostrum minus voluptatem, provident ipsum, nulla explicabo aperiam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis
+        accusamus voluptatibus magnam cum deleniti commodi eum blanditiis esse
+        voluptate. Et corporis rerum molestiae earum quaerat cum ipsum impedit
+        maiores?
+      </p>
+    </div>
+    <div class="exercise-3">
+      <h2>Задание 3</h2>
+      <ul>
+        <li>Пункт 1.</li>
+        <li>
+          Пункт 2.
+          <ul>
+            <li>Пункт 2.1.</li>
+            <li>
+              Пункт 2.2.
+              <ul>
+                <li>Пункт 2.2.1.</li>
+                <li>Пункт 2.2.2.</li>
+              </ul>
+            </li>
+            <li>Пункт 2.3.</li>
+          </ul>
+        </li>
+        <li>Пункт 1.</li>
+      </ul>
+    </div>
+    <div class="exercise-4">
+      <h2>Задание 4</h2>
+      <p>Ответ: В</p>
+
+    </div>
+    <div class="exercise-5">
+      <h2>Задание 5</h2>
+      <p>Ответ: В</p>
+    </div>
+    <div class="exercise-6">
+      <h2>Задание 6</h2>
+      <p>Требуется страницы с отзывами. В эти отзывы входят:</p>
+      <ul>
+        <li>Аватар пользователя</li>
+        <li>Имя пользователя</li>
+        <li>Оценка, банальные звездочки от 1-5</li>
+        <li>Текст с отзывом</li>
+      </ul>
+      <p style="width: 500px">
+        Также на одной странице должно быть размещено по 10 отзывов и
+        возможность навигации между страницами (слайдер). Нужно продумать
+        функционал добавления самого отзыва, куда он вводит: текст и оценку, а
+        фото и имя пользователя, должны подтягиваться с его профеля, для того,
+        чтобы была возможность отображать только подтвержденных пользователей
+        сайта. Также должна быть возможность редактирования отзывав в админке.
+      </p>
+      <p>Примеры:</p>
+      <a href="https://ru.hexlet.io/programs/frontend"
+        >https://ru.hexlet.io/programs/frontend</a
+      >
+      <br />
+      <a href="https://elfsight.com/ru/testimonials-slider-widget/examples/"
+        >https://elfsight.com/ru/testimonials-slider-widget/examples/</a
+      >
+    </div>
+    <div class="exercise-7">
+      <h2>Задание 7</h2>
+      <p>[block_title title="Рекомендованные" tag="h1"]</p>
+      <p>[objects_list ids="1717,7516,10555" max="3"]</p>
+    </div>
+    <div class="exercise-8">
+      <h2>Задание 8</h2>
+        <p>{
+          "object_type": {
+            "compare": "=",
+            "value": "1"
+          },
+        
+        "deal_type": {
+            "compare": "=",
+            "value": "2"
+          },
+        
+          "status": {
+            "compare": "=",
+            "value": "1"
+          }
+        }</p>
+    </div>
+    <div class="exercise-9" style="width: 500px;">
+      <h2>Задание 9</h2>
+      <p>Добрый день Иванов Кирилл Генадьевич!</p>
+      <p>
+        Мы получили ваш запрос относительно проблемы с загрузкой фотографии
+        через админку сайта, чтобы решить данную проблему попробуйте сделать
+        несколько шагов:
+      </p>
+      <ul>
+        <li><b>Обновите страницу сайта</b></li>
+        <li>
+          <p>
+           <b> Сбросьте кеш браузера. Для google chrome:</b>
+            нажмите ctrl + shift + delete, выберите "Изображения и файлы в кэше"
+            и нажмите "Очистить данные"
+          </p>
+          <p><b>Для Яндекс:</b> ctrl + shift + delete, файлы сохраненные в кеше</p>
+        </li>
+        <li>
+          <b>Смените браузер:</b> например если вы пользуетесь chrome,
+          попробуйте Яндекс
+        </li>
+        <li><b>Временно отключите сторонние программы расширения в админке</b></li>
+      </ul>
+      <p>
+        Если после выполнения этих шагов проблема не была решина, просьба
+        оповестить нас, мы постаемся решить данный вопрос.
+      </p>
+      <p>Хорошего дня!</p>
+      <p>С уважением,</p>
+      <p>Галиуллова Яна Герусовна</p>
+      <p>Контент-менеджер</p>
+      <p>8927*******</p>
+      <p>*****.@mail.ru</p>
+    </div>
+    <div class="exercise-10">
+      <h2>Задание 10</h2>
+      <p>
+        Проблема самой Н 1 была в том что ракета подходила только под
+        пилотируемый полёт советского космонавта к Луне. Основная цель — это
+        победить лунную гонку и показать преимущество советской системы. Лунная
+        гонка оказалась проиграна и программа свёрнута, экономически и
+        идеологически победили США. Ракета Н 1 не дала советскому народу ничего
+        , кроме расходов и частичного удовлетворения амбиций Королёва. А
+        Королёву было плевать на экономическое положение страны, на ядерный щит,
+        на обороноспособность , свою миссию он видел в полёте к Марсу, но тогда
+        уже отправили к Марсу первые АМС и уже начали понимать , что Марс
+        безжизненный разряженный ад. Сам по себе полёт на Луну СССР не поднял бы
+        советскую экономику, не создал бы советских Пресли и Битлз, не сделал бы
+        советский рубль мировой валютой, собственно экономически СССР остался
+        там же где и был.
+      </p>
+      <p>
+        Вторая попытка создания супертяж это бессмысленная и супердорогая
+        система «Энергия-Буран» помимо воровства и амбиций верхушки минобщемаша
+        и минобороны, цель была опять «догнать и перегнать США». Тоже
+        конструкторам и функционерам было наплевать, что у ракеты нет задачь,
+        что ракета и сама система разорительна и неэффективны. В итоге страна
+        рухнула в пучину гражданской войны, создателей Бурана погнали из квартир
+        в Байконуре местные аборигены ссаными тряпками, а сами бураны и ракеты
+        сгнили , оборудование продано в металлолом.
+      </p>
+     <b> [hidden_text open_text="Смотреть статью полностью" hide_text="Скрыть"]</b>
+        Проблема была в том что Энергия ничего не могла вывести кроме Бурана или
+        орбитальных станций, но с выведением ОС дешевле и эффективней справлялся
+        Протон-К, а Буран был дорог и бесполезен ( как и его собрат шаттл). Да
+        теоретически шаттл мог совершить «нырок» и ударить ядерной бомбой по
+        Москве, но это нивелировалось гарантированным ответным уничтожением США
+        ядерными ракетами СССР. Аналогичный удар Бурана тоже привёл бы к
+        уничтожению СССР и мира в ЯО.
+       <b> [/hidden_text]</b>
+      </p>
+   
+    </div>
+  </body>
+</html>
